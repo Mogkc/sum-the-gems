@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Wager</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>The Wager</h1>
+    <p id="instructions">
+        I present you with four types of gem, but I will not tell you their prices. Then I will set a cost.
+        If you, by purchasing gems, match the cost exactly, I will give you one gem for free.
+        If you cannot, pay me the amount you overshot the goal. Good luck.
+    </p>
+    <section id="game">
+        <h2>Goal: <span id="goal"></span></h2>
+        <h3>Spent: <span id="spent"></span></h3>
+        <button class="gem" id="jade">Jade</button>
+        <button class="gem" id="sapphire">Sapphire</button>
+        <button class="gem" id="lazulite">Lazulite</button>
+        <button class="gem" id="topaz">Topaz</button>
+    </section>
+    <!-- Functionality -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
