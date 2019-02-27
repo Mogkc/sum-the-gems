@@ -63,6 +63,7 @@ h2 {
     h2 {
         clear: both;
         text-align: left;
+        width: 60%;
     }
 }
 
@@ -71,5 +72,9 @@ h2 {
         position: relative;
         left: -20px;
         clear: both;
+    }
+
+    #results {
+        width: 100%;
     }
 }
