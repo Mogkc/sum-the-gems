@@ -6,7 +6,7 @@ h1 {
     text-align: center;
     font-size: 2em;
     background-color: azure;
-    width: 350px;
+    width: 360px;
 }
 
 h2 {
@@ -16,12 +16,16 @@ h2 {
     font-size: 1.8em;
 }
 
+#results {
+    width: 360px;
+}
+
 #instructions {
     float: left;
     font-size: 1.2em;
     background-color: black;
     color: paleturquoise;
-    width: 350px;
+    width: 360px;
 }
 
 #cloth {
@@ -62,9 +66,10 @@ h2 {
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 750px) {
     #cloth {
         position: relative;
+        left: -20px;
         clear: both;
     }
 }

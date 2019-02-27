@@ -3,7 +3,6 @@ var lost = false;
 var overspending = 0;
 
 var crystalGame = {
-    wins: 0,
     newGame: function() {
         won = false;
         lost = false;
@@ -28,7 +27,6 @@ var crystalGame = {
 
         if(this.goal === this.spent) {
             won = true;
-            this.wins++;
         } else if(this.goal < this.spent) {
             lost = true;
             overspending += this.spent - this.goal;
@@ -49,10 +47,11 @@ $(document).ready(function() {
         crystalGame.buyGem(event.target.id);
         if(lost) {
             alert("Overspending: $" + (crystalGame.spent - crystalGame.goal));
+            $("#results").append("<img src='assets/images/flawed-skull.gif'>");
             crystalGame.newGame();
         } else if(won) {
             alert("Congratulations, you get a free gem!");
-            $("#wins").text(crystalGame.wins);
+            $("#results").append("<img src='assets/images/flawless-diamond.gif'>");
             crystalGame.newGame();
         }
 
