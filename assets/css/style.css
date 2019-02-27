@@ -1,0 +1,70 @@
+body {
+    background-color: dimgray;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    background-color: azure;
+    width: 350px;
+}
+
+h2 {
+    float: left;
+    text-align: center;
+    width: 150px;
+    font-size: 1.8em;
+}
+
+#instructions {
+    float: left;
+    font-size: 1.2em;
+    background-color: black;
+    color: paleturquoise;
+    width: 350px;
+}
+
+#cloth {
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.gem {
+    position: absolute;
+    width: 4em;
+}
+
+#emerald {
+    top: 100px;
+    left: 100px;
+}
+
+#sapphire {
+    top: 100px;
+    left: 240px;
+}
+
+#amethyst {
+    top: 240px;
+    left: 240px;
+}
+
+#topaz {
+    top: 240px;
+    left: 100px;
+}
+
+@media screen and (max-width:1200px) {
+    h2 {
+        clear: both;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #cloth {
+        position: relative;
+        clear: both;
+    }
+}
