@@ -10,18 +10,18 @@ var crystalGame = {
         //Create random values for this game
         this.goal = 19 + Math.floor(Math.random() * 100);
         this.spent = 0;
-        this.jade = 1 + Math.floor(Math.random() * 11);
+        this.emerald = 1 + Math.floor(Math.random() * 11);
         this.sapphire = 1 + Math.floor(Math.random() * 11);
-        this.lazulite = 1 + Math.floor(Math.random() * 11);
+        this.amethyst = 1 + Math.floor(Math.random() * 11);
         this.topaz = 1 + Math.floor(Math.random() * 11);
     },
     buyGem: function(gem) {
-        if(gem === "jade") {
-            this.spent += this.jade;
+        if(gem === "emerald") {
+            this.spent += this.emerald;
         } else if(gem === "sapphire") {
             this.spent += this.sapphire;
-        } else if(gem === "lazulite") {
-            this.spent += this.lazulite;
+        } else if(gem === "amethyst") {
+            this.spent += this.amethyst;
         } else if(gem === "topaz") {
             this.spent += this.topaz;
         }

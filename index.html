@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
     <h1>The Wager</h1>
     <p id="instructions">
@@ -20,13 +22,17 @@
     </p>
     <section id="game">
         <h2>Goal: <span id="goal"></span></h2>
-        <h3>Spent: <span id="spent"></span></h3>
-        <button class="gem" id="jade">Jade</button>
-        <button class="gem" id="sapphire">Sapphire</button>
-        <button class="gem" id="lazulite">Lazulite</button>
-        <button class="gem" id="topaz">Topaz</button>
+        <h2>Spent: <span id="spent"></span></h2>
+        <img id="cloth" src="https://images-na.ssl-images-amazon.com/images/I/71p5msZYS2L._UY395_.jpg">
+        <img class="gem" id="emerald" src="assets/images/flawed-emerald.gif">
+        <img class="gem" id="sapphire" src="assets/images/flawed-sapphire.gif">
+        <img class="gem" id="amethyst" src="assets/images/flawed-amethyst.gif">
+        <img class="gem" id="topaz" src="assets/images/flawed-topaz.gif">
     </section>
+
+    <h1>Wins: <span id="wins"></span></h1>
     <!-- Functionality -->
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
